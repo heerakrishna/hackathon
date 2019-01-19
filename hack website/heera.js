@@ -10,9 +10,18 @@ var config = {
 firebase.initializeApp(config);
 user = "heera";
 data = firebase.database().ref(user + "/cart/phone");
+
 data.on("value", function (snap) {
     nu = document.getElementById("number")
     nu.innerText ="number :"+ snap.val();
+    if (snap.val() >0){
+        n = document.getElementById("phone")
+        n.style.display="block"
+    }
+    else{
+        n = document.getElementById("phone")
+        n.style.display="none"
+    }
 
 
 });
