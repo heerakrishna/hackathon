@@ -34,6 +34,7 @@ body {margin:0;}
 }
 
 .card {
+    display:none;
     margin-top: 10vw;
     padding: 14px 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
